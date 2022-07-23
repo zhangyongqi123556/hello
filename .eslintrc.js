@@ -3,7 +3,7 @@ module.exports = {
     defineProps: "readonly",
     defineEmits: "readonly",
     defineExpose: "readonly",
-    withDefaults: "readonly"
+    withDefaults: "readonly",
   },
   env: {
     browser: true,
@@ -12,7 +12,8 @@ module.exports = {
   },
   extends: [
     'plugin:vue/vue3-strongly-recommended',
-    'standard'
+    'standard',
+    './.eslintrc-auto-import.json'
   ],
   parserOptions: {
     ecmaVersion: 12,
@@ -22,5 +23,6 @@ module.exports = {
     'vue'
   ],
   rules: {
+    quotes: ['double']
   }
 }
