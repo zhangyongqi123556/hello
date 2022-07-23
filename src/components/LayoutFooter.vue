@@ -8,9 +8,7 @@
   </van-tabbar>
 </template>
 
-<script setup>
-  
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 // 增加 fixed 样式的权重

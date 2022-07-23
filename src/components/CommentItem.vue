@@ -2,7 +2,7 @@
   <van-cell class="comment-item">
     <!-- 用户信息 -->
     <div class="user-info">
-      <img :src="reply?.avatar" alt="">
+      <img :src="reply?.avatar" alt="" />
       <span class="nickname" v-text="reply?.nickname"></span>
       <van-rate v-model="star" readonly size="12" />
     </div>
@@ -12,26 +12,25 @@
     <p class="comment-content" v-text="reply?.comment"></p>
     <!-- 图片列表 -->
     <ul class="picture">
-      <li
-        v-for="(item,index) in pics"
-        :key="index"
-      ><img :src="item" alt=""></li>
+      <li v-for="(item, index) in pics" :key="index">
+        <img :src="item" alt="" />
+      </li>
     </ul>
   </van-cell>
 </template>
 
 <script setup>
-import { computed } from "@vue/reactivity"
+import { computed } from "@vue/reactivity";
 
 const { reply } = defineProps({
   reply: {
     type: Object,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const star = computed(() => Number(reply?.star))
-const pics = computed(() => reply?.pics )
+const star = computed(() => Number(reply?.star));
+const pics = computed(() => reply?.pics);
 </script>
 
 <style lang="scss" scoped>

@@ -3,7 +3,7 @@ module.exports = {
     defineProps: "readonly",
     defineEmits: "readonly",
     defineExpose: "readonly",
-    withDefaults: "readonly"
+    withDefaults: "readonly",
   },
   env: {
     browser: true,
@@ -22,5 +22,6 @@ module.exports = {
     'vue'
   ],
   rules: {
+    quotes: ['double']
   }
 }
