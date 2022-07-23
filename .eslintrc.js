@@ -12,7 +12,8 @@ module.exports = {
   },
   extends: [
     'plugin:vue/vue3-strongly-recommended',
-    'standard'
+    'standard',
+    './.eslintrc-auto-import.json'
   ],
   parserOptions: {
     ecmaVersion: 12,

@@ -29,7 +29,7 @@
   </van-grid>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // 接收父组件传递的数据，并进行解构使用。
 const { productsData } = defineProps({
   productsData: {

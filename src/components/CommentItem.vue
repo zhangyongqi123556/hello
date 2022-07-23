@@ -20,15 +20,16 @@
 </template>
 
 <script setup lang="ts">
-import { computed, reactive } from "@vue/reactivity";
+import { computed} from "@vue/reactivity";
 const a: string = '1';
-
 const { reply } = defineProps({
   reply: {
     type: Object,
     required: true,
   },
 });
+
+
 
 const star = computed(() => Number(reply?.star));
 
