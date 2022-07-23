@@ -19,8 +19,9 @@
   </van-cell>
 </template>
 
-<script setup>
-import { computed } from "@vue/reactivity";
+<script setup lang="ts">
+import { computed, reactive } from "@vue/reactivity";
+const a: string = '1';
 
 const { reply } = defineProps({
   reply: {
@@ -30,7 +31,9 @@ const { reply } = defineProps({
 });
 
 const star = computed(() => Number(reply?.star));
+
 const pics = computed(() => reply?.pics);
+
 </script>
 
 <style lang="scss" scoped>

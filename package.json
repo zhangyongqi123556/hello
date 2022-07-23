@@ -1,32 +1,28 @@
 {
-  "name": "lagou-shop-mobile",
+  "name": "my-vue-app",
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
-    "lint": "eslint ./src/**/*.{js,vue} --fix"
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "@vant/use": "^1.4.1",
     "amfe-flexible": "^2.2.1",
     "axios": "^0.21.1",
     "vant": "^3.2.0",
     "vue": "^3.2.2",
     "vue-router": "^4.0.8",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "lint": "eslint ./src/**/*.{js,vue} --fix"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.2.2",
-    "@vue/cli-plugin-typescript": "~5.0.0",
-    "@vue/compiler-sfc": "^3.2.2",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-vue": "^7.16.0",
+    "@vitejs/plugin-vue": "^3.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0",
+    "vue-tsc": "^0.38.4",
     "postcss-pxtorem": "^6.0.0",
-    "sass": "^1.37.5",
-    "vite": "^2.3.4"
+    "sass": "^1.37.5"
   }
 }
