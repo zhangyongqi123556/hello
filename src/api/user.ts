@@ -7,14 +7,14 @@ export const getVerifyCode = () => request({
 })
 
 // 获取短信验证码
-export const getVerify = data => request({
+export const getVerify = (data: any) => request({
   method: 'POST',
   url: '/register/verify',
   data
 })
 
 // 密码登录
-export const loginByPassword = data => request({
+export const loginByPassword = (data: any) => request({
   method: 'POST',
   url: '/login',
   data
